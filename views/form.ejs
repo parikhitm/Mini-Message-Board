@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="new-message-container">
+        <h1>
+            <%= title %>
+        </h1>
+
+        <a href="/">Back</a>
+
+        <form method="POST" action="/new">
+            <div>
+                <label for="messageUser">Name:</label>
+                <input type="text" id="messageUser" name="messageUser" required>
+            </div>
+            <div>
+                <label for="messageText">Message:</label>
+                <textarea style="min-height: 45px;" id="messageText" name="messageText" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</body>
+
+</html>

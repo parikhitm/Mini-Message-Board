@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            <%= title %>
+        </h1>
+        <a href="/new">New Message</a>
+
+        <div class="messages">
+            <% messages.forEach(message=> { %>
+                <div class="message">
+                    <div class="message-info">
+                        <p style="font-size: 18px; color: black;"><strong>
+                                <%= message.user %>
+                            </strong></p>
+                        <p style="font-size: 15px; color: black;">
+                            <%= message.text %>
+                        </p>
+                        <p><small>
+                                <%= message.added.toLocaleString() %>
+                            </small></p>
+                    </div>
+                    <a href="/message/<%= message.id %>" class="open-btn">Open</a>
+                </div>
+                <% }); %>
+        </div>
+    </div>
+</body>
+
+</html>

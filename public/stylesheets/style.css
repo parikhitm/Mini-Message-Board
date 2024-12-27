@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  width: 94%;
+    padding: 3%;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: #f9f9f9;
+    color: black;
+  }
+
+  .container {
+    width: 40%;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 1px 19px 9px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .container h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+  }
+
+  .container a {
+    text-align: center;
+    width: 19%;
+    align-self: center;
+    height: 45px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  .messages {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .message {
+    border: 2px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .message-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    width: 70%;
+    gap: 10px;
+  }
+  .message-info p {
+    margin: 0;
+    color: black;
+  }
+
+  .open-btn {
+    width: 30%;
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 3px;
+    margin-top: 5px;
+  }
+  
+  .open-btn:hover {
+    background-color: #0056b3;
+  }
+
+  .new-message-container {
+    width: 30%;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 1px 19px 9px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .new-message-container h1 {
+    text-align: start;
+    width: 70%;
+    margin: 0;
+    font-size: 40px;
+    color: black;
+  }
+
+  .new-message-container a {
+    text-align: center;
+    width: 19%;
+    align-self: center;
+    height: 34px;
+    background-color: rgb(201, 201, 202);
+    text-decoration: none;
+    color: rgb(87, 86, 86);
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: bolder;
+  }
+  
+  form {
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    width: 100%;
+    font-size: 16px;
+    font-weight: bolder;
+    color: black;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input, textarea {
+    width: 96%;
+    padding: 8px;
+    resize: none;
+    border: 1px solid rgb(196, 194, 194);
+    border-radius: 7px;
+    min-height: 20px;
+    color: black;
+  }
+
+  form button {
+    width: 27%;
+    display: inline-block;
+    padding: 5px 8px;
+    background-color: #007bff;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    align-self: center;
+    height: 35px;
+  }
+
+  .messages-container {
+    width: 40%;
+    border: none;
+    border-radius: 12px;
+    background-color: #fff;
+    padding: 40px;
+    box-shadow: 0px 1px 19px 9px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .messages-container h1 {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    color: black;
+  }
+  
+  .message-details {
+    width: 94.2%;
+    background-color: rgb(233, 231, 231);
+    margin: 20px 0;
+    padding: 20px;
+    border: none;
+    border-radius: 10px;
+  }
+
+  .message-details h2 {
+    color: black;
+  }
+  
+  .message-text {
+    font-size: 1.2em;
+    margin: 15px 0;
+    color: black;
+  }
+  
+  .message-date {
+    color: #666;
+    font-weight: bolder;
+  }
+
+  .messages-container a {
+    text-align: center;
+    width: 30%;
+    align-self: center;
+    height: 45px;
+    background-color: blue;
+    text-decoration: none;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: bolder;
+  }

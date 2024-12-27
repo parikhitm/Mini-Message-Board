@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        <%= title %>
+    </title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+
+<body>
+    <div class="messages-container">
+        <h1>
+            <%= title %>
+        </h1>
+
+        <div class="message-details">
+            <h2>From: <%= message.user %>
+            </h2>
+            <p class="message-text">
+                <%= message.text %>
+            </p>
+            <p class="message-date">Posted on: <%= message.added.toLocaleString()%>
+            </p>
+        </div>
+
+        <a href="/">Back to Messages</a>
+    </div>
+</body>
+
+</html>
