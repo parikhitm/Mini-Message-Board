@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: mini-message-board
+    env: node
+    buildCommand: npm install
+    startCommand: node app.js
+    envVars:
+      - key: DATABASE_URL
+        sync: false
+      - key: PORT
+        value: 10000
